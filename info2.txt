@@ -1,0 +1,51 @@
+Positioned(
+      left: 0,
+      bottom: 295,
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Stack(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(bottom: 30),
+                    child: Image.asset(
+                      "assets/images/Ellipse 24.png",
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(3),
+                    child: Image.asset(
+                      "assets/images/Line 4.png",
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "We seek to expand the surveillance network",
+                    // textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "to all countries                                                ",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
+    );

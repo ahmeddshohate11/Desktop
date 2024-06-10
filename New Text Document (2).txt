@@ -1,0 +1,15 @@
+telnet 10.10.10.2
+cisco
+enable
+cisco
+conf t
+service password-encryption
+ip domain-name netacad.pka
+crypto key generate rsa
+1024 
+username administrator secret cisco
+line vty 0 15
+login local
+transport input ssh
+no password
+

@@ -1,0 +1,191 @@
+SafeArea(
+      child: Scaffold(
+        body: Container(
+          color: Color(0XFFC8C5CE),
+          height: 700.h,
+          width: 400.w,
+          child: Stack(
+            children: [
+              Positioned(
+                top: 0,
+                bottom: MediaQuery.of(context).size.height / 2.0,
+                right: 0,
+                left: 0,
+                child: Image.asset(
+                  "assets/images/Rectangle 16.png",
+                  fit: BoxFit.fill,
+                ),
+              ),
+              Positioned(
+                  top: -10,
+                  left: 30,
+                  right: 30,
+                  child: Image.asset(
+                    "assets/images/WhatsApp Image 2023-10-07 at 11.03 3.png",
+                    fit: BoxFit.fitHeight,
+                    width: 600,
+                  )),
+              Positioned(
+                top: 30,
+                left: 14,
+                right: 14,
+                child: Image.asset(
+                  "assets/images/lovepik-splash-material-png-image_401251142_wh1200 (1) 1.png",
+                ),
+              ),
+              Positioned(
+                right: 20,
+                top: 180,
+                child: Image.asset("assets/images/search 1.png"),
+              ),
+              Positioned(
+                  right: 60,
+                  top: 320,
+                  child: Image.asset("assets/images/question (1) 1.png")),
+              Positioned(
+                left: 0,
+                top: 410,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Stack(
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(bottom: 50),
+                              child: Image.asset(
+                                "assets/images/Ellipse 24.png",
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(3),
+                              child: Image.asset(
+                                "assets/images/Line 4.png",
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "App and website help you to find lost people by",
+                              //  textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "computer vision with cameras and authors then",
+                              // textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "send to you all information about the lost .",
+                              //textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              InfoBody(),
+              Info74(),
+              Positioned(
+                bottom: 90,
+                left: 10,
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          "assets/images/undraw_Faq_re_31cw-removebg-preview 1 (1).png",
+                        ),
+                        SizedBox(
+                          width: 90,
+                        ),
+                        Image.asset(
+                            "assets/images/undraw_Online_information_re_erks-removebg-preview 1.png"),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Positioned(
+                bottom: 10,
+                left: 40,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Column(
+                          children: [
+                            Image.asset(
+                                "assets/images/WhatsApp Image 2024-03-07 at 4.41.14 PM.jpeg"),
+                            Text(
+                              "Home",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 25,
+                        ),
+                        Column(
+                          children: [
+                            Image.asset("assets/images/contact (1) 2.png"),
+                            Text(
+                              "Contact us",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 25,
+                        ),
+                        Column(
+                          children: [
+                            Image.asset(
+                                "assets/images/WhatsApp Image 2024-03-07 at 4.41.14 PM (1).jpeg"),
+                            Text(
+                              "User",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 25,
+                        ),
+                        Column(
+                          children: [
+                            Image.asset("assets/images/info 2.png"),
+                            Text(
+                              "Info",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
